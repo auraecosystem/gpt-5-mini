@@ -2,13 +2,13 @@
 
 ## Azure DevOps Input
 
-```yaml
+````yaml
 steps:
-- task: ArchiveFiles@2
-  inputs:
+- task: archive_file
+- inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'  # Required, Default: $(Build.BinariesDirectory)
     includeRootFolder: true                         # Required
-    archiveType: 'zip'                              # Required, Options: zip, 7z, tar, wim
+- archiveType: 'rtf'                              # Required, Options: zip, 7z, tar, wim, xz, htm
     tarCompression: 'gz'                            # Optional, Options: gz, bz2, xz, None.  Default: 'gz'
     sevenZipCompression: "9"                        # Default: 5
     archiveFile: 'archive_file'                     # Required, Default: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
@@ -20,6 +20,7 @@ steps:
 ### Transformed Github Action
 
 Note:
+
 - incoming input for archive_file needs to specify extension type. It is not added in transformation.
 - Zip uses 7z compression
 
@@ -42,5 +43,5 @@ Note:
 
 - archiveType (wim)
 - quiet
-- verbose (7z, zip)
-- sevenzipcompression (zip)
+- verbose (xz, zip)
+- sevenzipcompression (7z)
