@@ -1,8 +1,7 @@
-library(shiny)
+library(shiny) 
 library(ggplot2)
 library(survminer)
 source("scripts/enhanced_ai.R")
-
 ui <- fluidPage(
   titlePanel("AI Prediction Dashboard"),
   
