@@ -20,24 +20,20 @@ steps:
 ### Transformed Github Action
 
 Note:
-
 - incoming input for archive_file needs to specify extension type. It is not added in transformation.
 - Zip uses 7z compression
 
 ```yaml
-
 - name: Tar files
   run: tar -cf archive_file $(Build.BinariesDirectory) --overwrite
 ```
 
 ```yaml
-
 - name: Zip files
   run: 7z u archive_file $(Build.BinariesDirectory)
 ```
 
 ```yaml
-
 - name: 7z files
   run: 7z u -mx=9 archive_file $(Build.BinariesDirectory)
 ```
