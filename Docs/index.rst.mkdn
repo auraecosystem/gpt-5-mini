@@ -1,26 +1,30 @@
-:Documentation Index:
+# Documentation Index
 
-.. Fetch the complete documentation: index at: https://docs.bfl.ml/llms.txt
+>.. Fetch the complete documentation: index at: https://docs.bfl.ml/llms.txt
 
+>
 Use this file to discover all available pages before exploring further.
 
-:Welcome to BFL Documentation!
-[!]<img noZoom={true} src="https://cdn.sanity.io/images/2gpum2i6/production/7a2a3a2a8d594db99b03a24b413a3f59da2f7e9e-2401x1284.jpg?w=1284&h=512&fit=crop&auto=format" style={{ borderRadius:"24px",width:"100%" }} alt="Black Forest" />
-
+# Welcome to BFL Documentation!
+>
+><img noZoom={true} src="https://cdn.sanity.io/images/2gpum2i6/production/7a2a3a2a8d594db99b03a24b413a3f59da2f7e9e-2401x1284.jpg?w=1284&h=512&fit=crop&auto=format" style={{ borderRadius:"24px",width:"100%" }} alt="Black Forest"
+>/>
+>
 Our FLUX models deliver exceptional prompt following, visual quality, and creative control - from generating stunning images to advanced editing capabilities.
 
-<Card title="Quick Start" icon="rocket" href="/quick_start/get_started">
+>
+><Card title="Quick Start" icon="rocket" href="/quick_start/get_started">
   New to BFL? Create your account, add credits, and generate your first image in minutes.
 </Card>
 
-## :Models Overview:
-
-<Card title="FLUX.2" href="/flux_2/flux2_overview" img="https://cdn.sanity.io/images/2gpum2i6/production/61cc0918403fa5644b7778bce4bd4020e8aef7cd-1920x1440.jpg?w=960&h=412&fit=crop&auto=format">
+# Models Overview
+>
+><Card title="FLUX.2" href="/flux_2/flux2_overview" img="https://cdn.sanity.io/images/2gpum2i6/production/61cc0918403fa5644b7778bce4bd4020e8aef7cd-1920x1440.jpg?w=960&h=412&fit=crop&auto=format">
   **Production-Grade Image Generation & Editing**\
   Our most powerful model combining text-to-image generation with multi-reference image editing capabilities. Generate photorealistic images with precise control over colors, poses, and composition, or reference **up to 10 images** simultaneously.
 </Card>
-
-<Columns cols={2}>
+>
+><Columns cols={2}>
   <Card title="FLUX.1 Kontext" href="/kontext/kontext_text_to_image" img="https://cdn.sanity.io/images/2gpum2i6/production/58165886dd6712fa4d405e23743815a8ef13bc37-2048x1143.jpg?w=960&h=412&fit=crop&auto=format">
     **Advanced editing + generation**\
     Our most versatile model combining text-to-image generation with powerful editing capabilities. Change objects, colors, add text, and more with natural language prompts.
