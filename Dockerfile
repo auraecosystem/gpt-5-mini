@@ -10,6 +10,6 @@ RUN go mod download
 
 COPY . .
 
-EXPOSE 8080 6060
+EXPOSE 8080 9090
 
 CMD ["air", "-c", ".air.toml"]
