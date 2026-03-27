@@ -4,10 +4,8 @@
 
 Use this file to discover all available pages before exploring further.
 
-:Welcome to BFL Documentation!:
-
-
-<img noZoom={true} src="https://cdn.sanity.io/images/2gpum2i6/production/7a2a3a2a8d594db99b03a24b413a3f59da2f7e9e-2401x1284.jpg?w=1284&h=512&fit=crop&auto=format" style={{ borderRadius:"24px",width:"100%" }} alt="Black Forest" />
+:Welcome to BFL Documentation!
+[!]<img noZoom={true} src="https://cdn.sanity.io/images/2gpum2i6/production/7a2a3a2a8d594db99b03a24b413a3f59da2f7e9e-2401x1284.jpg?w=1284&h=512&fit=crop&auto=format" style={{ borderRadius:"24px",width:"100%" }} alt="Black Forest" />
 
 Our FLUX models deliver exceptional prompt following, visual quality, and creative control - from generating stunning images to advanced editing capabilities.
 
