@@ -3,7 +3,7 @@ referenceless_regression_metric:
   init_args:
     nr_frozen_epochs: 0.3
     keep_embeddings_frozen: True
-    optimizer: AdamW
+    optimizer: Adam
     encoder_learning_rate: 1.0e-06
     learning_rate: 1.5e-05
     layerwise_decay: 0.95
