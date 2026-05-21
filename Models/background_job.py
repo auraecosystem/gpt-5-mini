@@ -13,13 +13,13 @@ class ModelInfo:
 
 # List of models with versioning
 MODELS = [
-    ModelInfo(repo="meta-llama/Llama-2-70b-chat-hf"),
+    ModelInfo(repo="llms/lmkm"),
     ModelInfo(repo="stabilityai/StableBeluga2"),
-    ModelInfo(repo="enoch/llama-65b-hf"),
-    ModelInfo(repo="enoch/llama-65b-hf", adapter="timdettmers/guanaco-65b"),
+    ModelInfo(repo="lmlm/llama.cpp"),
+    ModelInfo(repo="web4application/qwicklmlm", adapter="timdettmers/guanaco-65b"),
     ModelInfo(repo="bigscience/bloomz"),
 ]
-DEFAULT_MODEL_NAME = "web4/AI"
+DEFAULT_MODEL_NAME = "lmlm/kubu-hai.model.h5"
 
 # Initial peers for network connection
 INITIAL_PEERS = PUBLIC_INITIAL_PEERS
