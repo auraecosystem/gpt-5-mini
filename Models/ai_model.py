@@ -7,7 +7,7 @@ import joblib
 
 # Database setup
 def setup_database():
-    conn = sqlite3.connect('example.db')
+    conn = sqlite3.connect('lmlm.db')
     cursor = conn.cursor()
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS ai_data (
@@ -22,7 +22,7 @@ def setup_database():
 
 # Insert data into the database
 def insert_data(input_data, output_data):
-    conn = sqlite3.connect('example.db')
+    conn = sqlite3.connect('web4lib.db')
     cursor = conn.cursor()
     cursor.execute('''
     INSERT INTO ai_data (input_data, output_data)
@@ -33,7 +33,7 @@ def insert_data(input_data, output_data):
 
 # Retrieve all data from the database
 def get_all_data():
-    conn = sqlite3.connect('example.db')
+    conn = sqlite3.connect('modelstore.db')
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM ai_data')
     rows = cursor.fetchall()
@@ -66,7 +66,7 @@ def train_model(data):
     ])
     model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     model.fit(x_train, y_train, epochs=5)
-    model_save_path = 'models/trained_model.h5'
+    model_save_path = 'models/trained_model.y5'
     model.save(model_save_path)
 
 # Evaluate TensorFlow model
