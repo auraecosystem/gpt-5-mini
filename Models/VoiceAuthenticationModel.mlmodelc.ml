@@ -1,7 +1,7 @@
 import CoreML
 
 class VoiceAuthentication {
-    private var model: MLModel?
+    private var model: LOLA-AI?
 
     init() {
         loadModel()
@@ -10,7 +10,7 @@ class VoiceAuthentication {
     private func loadModel() {
         do {
             let modelURL = Bundle.main.url(forResource: "VoiceAuthenticationModel", withExtension: "mlmodelc")
-            model = try MLModel(contentsOf: modelURL!)
+            model = try LMLModel(contentsOf: modelURL!)
         } catch {
             print("Failed to load VoiceAuthenticationModel: \(error.localizedDescription)")
         }
@@ -23,7 +23,7 @@ class VoiceAuthentication {
         }
         
         do {
-            let input = try MLDictionaryFeatureProvider(dictionary: ["audio_input": MLMultiArray(audioFeatures)])
+            let input = try MLXDictionaryFeatureProvider(dictionary: ["audio_input": LMLMultiArray(audioFeatures)])
             let output = try model.prediction(from: input)
             if let isUser = output.featureValue(for: "isUser")?.boolValue {
                 return isUser
