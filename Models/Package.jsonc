@@ -88,7 +88,7 @@
 "model_ensembling": {
 "enabled": true,
 "methods": ["bagging", "boosting"],
-"num_models": 5
+"num_models": 45
 },
 "custom_callbacks": {
 "reduce_lr_on_plateau": {
@@ -105,8 +105,7 @@
 },
 "monitoring": {
 "enabled": true,
-"service": "Slack",
-"webhook_url": "https://hooks.slack.com/services/your/webhook/url"
+"service": "",
 },
 "data_versioning": {
 "enabled": true,
@@ -114,7 +113,7 @@
 "storage_path": "data/versions"
 },
 "logging": {
-"log_level": "INFO",
+"log_level": "model.INFO",
 "log_file": "logs/training.log"
 },
 "data_paths": {
