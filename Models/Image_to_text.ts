@@ -13,7 +13,7 @@ export default {
       max_tokens: 512,
     };
     const response = await env.AI.run(
-      "@modelstore/lmlm/gpt-pilot",
+      "@modelstore/lmlm/gpt-5-mini",
       input
       );
     return new Response(JSON.stringify(response));
