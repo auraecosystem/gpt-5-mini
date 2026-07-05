@@ -43,3 +43,5 @@ if resp.status_code == 200:
     print(resp.json()["completion"])  
 else:  
     print("Error:", resp.text)  
+
+
