@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="ChatGPT5 mini helps you get answers, learn, and be more productive." />
-<meta name="keywords" content="ChatGPT5 mini, AI assistant, productivity chatbot, writing help, brainstorm tool" />
-<title>ChatGPT5 mini</title>
+<meta name="description" content="GPT mini helps you get answers, learn, and be more productive." />
+<meta name="keywords" content="GPT mini, AI assistant, productivity chatbot, writing help, brainstorm tool" />
+<title>GPT mini</title>
 <link rel="icon" href="favicon.png" sizes="32x32" />
 <link rel="apple-touch-icon" sizes="180x180" href="logo.png" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
@@ -56,7 +56,7 @@ footer { text-align:center; padding:20px; background:#eee; }
 
 <section class="hero">
   <img src="logo.png" alt="ChatGPT5 mini logo" />
-  <h1>Welcome to ChatGPT5 mini</h1>
+  <h1>Welcome to GPT5 mini</h1>
   <p>Your AI companion for writing, learning, and productivity.</p>
   <a href="#chat-preview" class="cta-button">Try It Now</a>
 </section>
@@ -66,7 +66,7 @@ footer { text-align:center; padding:20px; background:#eee; }
 </div>
 
 <section id="chat-preview">
-  <h2>See ChatGPT5 mini in Action</h2>
+  <h2>See GPT5 mini in Action</h2>
   <div id="chat-container">
     <div id="chat"></div>
     <div id="input-bar">
@@ -78,7 +78,7 @@ footer { text-align:center; padding:20px; background:#eee; }
 </section>
 
 <section class="testimonials">
-  <h2>Why People Love ChatGPT5 mini</h2>
+  <h2>Why People Love GPT5 mini</h2>
   <blockquote>"Helped me write my resume in minutes!" – Ada</blockquote>
   <blockquote>"Great for quick brainstorming before meetings." – Tunde</blockquote>
 </section>
@@ -110,7 +110,7 @@ async function sendMessage() {
   }, 500);
 
   try {
-    const res = await fetch("/api/chat", {
+    const res = await fetch("localhost/api/chat", {
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body: JSON.stringify({ message: text })
