@@ -1,5 +1,5 @@
-`makefile`
-┌───────────────┐
+```makefile
+┌───────────────|
 │ Fetch OpenAPI │
 │ Specs Repo    │
 └───────┬───────┘
