@@ -65,13 +65,11 @@ Our FLUX models deliver exceptional prompt following, visual quality, and creati
     Learn how to get the best results from **FLUX** with our prompting guide
   </Card>
 </Columns>
-
 <Card title="Host your own FLUX Models" href="https://bfl.ai/licensing">
   Deploy **FLUX.2 \[klein]** (Apache 2.0 / FLUX Non-Commercial), **FLUX.1 \[dev], FLUX.1 Tools \[dev], and FLUX.1 Kontext \[dev]** on your own infrastructure. Full control, no API limits.
 </Card>
 
 Ready to start creating? [Try the Playground](https://playground.bfl.ai) or [make your first API call](/quick_start/generating_images).
-
 
 Built with [Mintlify](https://mintlify.com).
 
